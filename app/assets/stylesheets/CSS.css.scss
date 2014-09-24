@@ -1,5 +1,40 @@
 @import 'bootstrap';
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+.navbar { 
+
+  background-color: #ffffff;
+  height: 90px;
+  border: none;
+
+}
+
+.navbar-default .navbar-brand {
+  color: #0C3D60;
+  }
+
+.navbar-brand { 
+
+  font-size: 40px;
+  padding: 30px;
+  padding-left: 50px;
+
+
+}
+
+.navbar-right { 
+
+  font-size: 20px;
+  padding: 15px;
+  padding-right: 50px;
+
+
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #12B7B3;
+}
 
 .container { 
 
