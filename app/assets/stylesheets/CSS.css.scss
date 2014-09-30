@@ -2,10 +2,19 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
+
 .navbar { 
 
   background-color: #ffffff;
   height: 110px;
+  border: none;
+
+}
+
+.xs-navbar { 
+
+  background-color: #ffffff;
+  height: 40px;
   border: none;
 
 }
@@ -68,15 +77,13 @@
 
 .row { 
 
-  padding: 50px;
-  padding-left: 100px;
+  padding: 35px;
+  padding-left: 50px;
   text-align: center;
   font-family: "Open Sans";
-  font-size: 25px;
+  font-size: 2.5vh;
   color: #0C3C60;
+  line-height: 4.0vh;
+
 }
 
-.map_canvas {
-        width: 500px;
-        height: 400px;
-      }
