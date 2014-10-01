@@ -1,0 +1,67 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<nav class="navbar navbar-default navbar-fixed-top hidden-xs hidden-sm" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <%= link_to image_tag("logo.png", :alt => "Au Contraire! Consulting", class:"img-responsive"), root_path, class: "navbar-brand" %>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to anglais_path do %>
+    <span class="glyphicon glyphicon-home"></span>
+<% end %></li>
+        <li><%= link_to "Expertise", root_path(anchor: "expertise") %></li>
+        <li><%= link_to "References", root_path(anchor: "references") %></li>
+        <li><%= link_to "Who are we ?", root_path(anchor: "qui sommes-nous") %></li>
+        <li><%= link_to "Contact", root_path(anchor: "contact") %></li>
+        <li><%= link_to image_tag("francais.png",), root_path %>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container-fluid">
+  <div class="media">
+    <%= image_tag("intro.png", :alt => "Management interculturel", class:"img-responsive") %>
+    </div>
+  </div>
+
+<div class="container-fluid", id="expertise">
+  <div class="media">
+    <%= image_tag("expertise.png", :alt => "Domaines d'expertise d'Au Contraire! Consulting", class:"img-responsive") %>
+    </div>
+  </div>
+
+<div class="container-fluid", id="references">
+  <div class="media">
+    <%= image_tag("references.png", :alt => "Chinoise à chapeau rouge", class:"img-responsive") %>
+    </div>
+  </div>
+
+<div class="container-fluid", id="qui sommes-nous">
+  <div class="media">
+    <%= image_tag("qui.png", :alt => "Eléonore Mandel", class:"img-responsive") %>
+    </div>
+  </div>
+
+
+    <div class="container-fluid" id="contact">
+      <div class="row spacer">
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-20"><span class="glyphicon glyphicon-envelope"></span> Mail<br>
+        <a href="mailto:em@aucontraireconsulting.com">em@aucontraireconsulting.com</a>
+    </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-20"><span class="glyphicon glyphicon-phone"></span> Téléphone<br>
+        +33 6 09 15 45 04</div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-20"><span class="glyphicon glyphicon-map-marker"></span> Adresse<br>
+          <p>13 Rue Claude-Nicolas Ledoux<br>14970 Bénouville</p></div>
+      </div>
+
+    </div>
+    
+
+
