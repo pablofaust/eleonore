@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
-  get "anglais" => "pages#anglais"
+  get "english" => "pages#english"
 
   match '/#contact',     to: 'contacts#new',             via: 'get'
 resources "contacts", only: [:new, :create]

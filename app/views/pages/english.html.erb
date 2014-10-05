@@ -5,20 +5,19 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <%= link_to image_tag("logo.png", :alt => "Au Contraire! Consulting", class:"img-responsive"), root_path, class: "navbar-brand" %>
+      <%= link_to image_tag("logo_en.png", :alt => "Au Contraire! Consulting", class:"img-responsive"), root_path, class: "navbar-brand" %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to anglais_path do %>
+        <li><%= link_to english_path do %>
     <span class="glyphicon glyphicon-home"></span>
 <% end %></li>
-        <li><%= link_to "Expertise", root_path(anchor: "expertise") %></li>
-        <li><%= link_to "References", root_path(anchor: "references") %></li>
-        <li><%= link_to "Who are we ?", root_path(anchor: "qui sommes-nous") %></li>
-        <li><%= link_to "Contact", root_path(anchor: "contact") %></li>
-        <li><%= link_to image_tag("francais.png",), root_path %>
+        <li><%= link_to "Expertise areas", english_path(anchor: "expertise_en") %></li>
+        <li><%= link_to "References", english_path(anchor: "references_en") %></li>
+        <li><%= link_to "About Us", english_path(anchor: "about_us") %></li>
+        <li><%= link_to "FRANCAIS", root_path %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -26,25 +25,25 @@
 
 <div class="container-fluid">
   <div class="media">
-    <%= image_tag("intro.png", :alt => "Management interculturel", class:"img-responsive") %>
+    <%= image_tag("intro_en.png", :alt => "AuContraire! Constulting International", class:"img-responsive") %>
     </div>
   </div>
 
-<div class="container-fluid", id="expertise">
+<div class="container-fluid", id="expertise_en">
   <div class="media">
-    <%= image_tag("expertise.png", :alt => "Domaines d'expertise d'Au Contraire! Consulting", class:"img-responsive") %>
+    <%= image_tag("expertise_en.png", :alt => "Expertise areas of Au Contraire! Consulting", class:"img-responsive") %>
     </div>
   </div>
 
-<div class="container-fluid", id="references">
+<div class="container-fluid", id="references_en">
   <div class="media">
     <%= image_tag("references.png", :alt => "Chinoise à chapeau rouge", class:"img-responsive") %>
     </div>
   </div>
 
-<div class="container-fluid", id="qui sommes-nous">
+<div class="container-fluid", id="about_us">
   <div class="media">
-    <%= image_tag("qui.png", :alt => "Eléonore Mandel", class:"img-responsive") %>
+    <%= image_tag("about_us.png", :alt => "Eléonore Mandel", class:"img-responsive") %>
     </div>
   </div>
 
@@ -62,6 +61,9 @@
       </div>
 
     </div>
-    
+    <div class="media">
+    <%= image_tag("perenne.png", :alt => "Perenne, entreprise engagée", class:"img-responsive") %>
+    </div>
+  </div>
 
 
