@@ -17,11 +17,27 @@
         <li><%= link_to "Expertise areas", english_path(anchor: "expertise_en") %></li>
         <li><%= link_to "References", english_path(anchor: "references_en") %></li>
         <li><%= link_to "About Us", english_path(anchor: "about_us") %></li>
-        <li><%= link_to "FRANCAIS", root_path %>
+        <li><%= link_to "FRANCAIS", root_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<div class="english-xs visible-xs">
+  <%= link_to image_tag("logo-xs.png", :alt => "Logo d'Au Contraire! Consulting"), root_path %>
+  <%= link_to "FRANCAIS", root_path, class:"eng-xs" %>
+  <%= link_to "About us", root_path(anchor: "qui sommes-nous"), class:"qui-xs" %>
+</div>
+
+<div class="english-sm visible-sm">
+  <%= link_to image_tag("logo_en.png", :alt => "Logo d'Au Contraire! Consulting"), root_path %>
+  <%= link_to "FRANCAIS", english_path, class:"eng-sm" %>
+  <%= link_to "About us", root_path(anchor: "qui sommes-nous"), class:"qui-sm" %>
+  <%= link_to "Expertise areas", root_path(anchor: "expertise"), class:"expertise-sm" %>
+    <%= link_to root_path do %>
+    <span class="home-sm glyphicon glyphicon-home"></span>
+<% end %>
+</div>
 
 <div class="container-fluid">
   <div class="media">

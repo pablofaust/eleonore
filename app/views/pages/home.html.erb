@@ -24,14 +24,30 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div class="english-xs visible-xs hidden-">
+<div class="english-xs visible-xs">
   <%= link_to image_tag("logo-xs.png", :alt => "Logo d'Au Contraire! Consulting"), root_path %>
-  <%= link_to "ENGLISH", english_path, class:"version_eng" %>
+  <%= link_to "ENGLISH", english_path, class:"eng-xs" %>
+  <%= link_to "Qui sommes-nous ?", root_path(anchor: "qui sommes-nous"), class:"qui-xs" %>
 </div>
 
 <div class="english-sm visible-sm">
-  <%= link_to image_tag("logo-md.png", :alt => "Logo d'Au Contraire! Consulting"), root_path %>
-  <%= link_to "ENGLISH", english_path, class:"version_eng" %>
+  <%= link_to image_tag("logo.png", :alt => "Logo d'Au Contraire! Consulting"), root_path %>
+  <%= link_to "ENGLISH", english_path, class:"eng-sm" %>
+  <%= link_to "Qui sommes-nous ?", root_path(anchor: "qui sommes-nous"), class:"qui-sm" %>
+  <%= link_to "Domaines d'expertise", root_path(anchor: "expertise"), class:"expertise-sm" %>
+    <%= link_to root_path do %>
+    <span class="home-sm glyphicon glyphicon-home"></span>
+<% end %>
+</div>
+
+<div class="english-md visible-md">
+  <%= link_to image_tag("logo.png", :alt => "Logo d'Au Contraire! Consulting"), root_path %>
+  <%= link_to "ENGLISH", english_path %>
+  <%= link_to "Qui sommes-nous ?", root_path(anchor: "qui sommes-nous") %>
+  <%= link_to "Domaines d'expertise", root_path(anchor: "expertise") %>
+    <%= link_to root_path do %>
+    <span class="glyphicon glyphicon-home"></span>
+<% end %>
 </div>
 
 <div class="container-fluid">

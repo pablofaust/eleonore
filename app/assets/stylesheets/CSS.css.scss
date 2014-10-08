@@ -45,7 +45,7 @@
 
 }
 
-.version_eng { 
+.eng-xs { 
 
   display: block;
   float: right;
@@ -53,12 +53,73 @@
 
 }
 
+.qui-xs { 
+
+  display: block;
+  float: right;
+  color: #0B385E;
+  padding-right: 10px;
+
+}
+
 .english-xs img { 
 
   display: block;
   float: left;
-  color: #0B385E;
 
+}
+
+.english-sm { 
+
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  padding: 0.5vh;
+
+}
+
+.eng-sm { 
+
+  display: block;
+  float: right;
+  color: #0B385E;
+  line-height: 60px;
+  padding-right: 10px;
+
+}
+
+.english-sm img { 
+
+  display: block;
+  float: left;
+
+}
+
+.home-sm { 
+
+  display: block;
+  float: right;
+  color: #0B385E;
+  line-height: 56px;
+  padding-right: 10px;
+}
+
+.qui-sm { 
+
+  display: block;
+  float: right;
+  color: #0B385E;
+  line-height: 60px;
+  padding-right: 10px;
+}
+
+.expertise-sm { 
+
+  display: block;
+  float: right;
+  color: #0B385E;
+  line-height: 60px;
+  padding-right: 10px;
 }
 
 .container { 
