@@ -26,14 +26,14 @@
 <div class="english-xs visible-xs">
   <%= link_to image_tag("logo-xs.png", :alt => "Logo d'Au Contraire! Consulting"), root_path %>
   <%= link_to "FRANCAIS", root_path, class:"eng-xs" %>
-  <%= link_to "About us", root_path(anchor: "qui sommes-nous"), class:"qui-xs" %>
+  <%= link_to "About us", english_path(anchor: "about_us"), class:"qui-xs" %>
 </div>
 
 <div class="english-sm visible-sm">
   <%= link_to image_tag("logo_en.png", :alt => "Logo d'Au Contraire! Consulting"), root_path %>
   <%= link_to "FRANCAIS", english_path, class:"eng-sm" %>
-  <%= link_to "About us", root_path(anchor: "qui sommes-nous"), class:"qui-sm" %>
-  <%= link_to "Expertise areas", root_path(anchor: "expertise"), class:"expertise-sm" %>
+  <%= link_to "About us", english_path(anchor: "about_us"), class:"qui-sm" %>
+  <%= link_to "Expertise areas", english_path(anchor: "expertise_en"), class:"expertise-sm" %>
     <%= link_to root_path do %>
     <span class="home-sm glyphicon glyphicon-home"></span>
 <% end %>
@@ -53,7 +53,7 @@
 
 <div class="container-fluid", id="references_en">
   <div class="media">
-    <%= image_tag("references.png", :alt => "Chinoise à chapeau rouge", class:"img-responsive") %>
+    <img src="assets/references_en.png" alt ="Chinoise à chapeau rouge" class="img-responsive" />
     </div>
   </div>
 
@@ -65,6 +65,29 @@
 
 
     <div class="container-fluid" id="contact">
+
+         <div class="row spacer hidden-xs">
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 "><a href="#">
+       <%= image_tag("viameo.png", :alt => "Logo de Viameo") %></a></div>
+       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="#">
+      <%= image_tag("linkedin.png", :alt => "Logo de Viameo") %></a></div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="#">
+      <%= image_tag("doyoubuzz.png", :alt => "Logo de Viameo") %></a></div>
+
+    </div>
+
+             <div class="row spacer visible-xs">
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 "><a href="#">
+       <%= image_tag("viameo-xs.png", :alt => "Logo de Viameo") %></a></div>
+       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="#">
+      <%= image_tag("linkedin-xs.png", :alt => "Logo de Viameo") %></a></div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="#">
+      <%= image_tag("doyoubuzz-xs.png", :alt => "Logo de Viameo") %></a></div>
+
+    </div>
+
       <div class="row spacer">
 
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-20"><span class="glyphicon glyphicon-envelope"></span> Mail<br>
